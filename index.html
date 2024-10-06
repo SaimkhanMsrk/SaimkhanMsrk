@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Saimkhan - Personal Portfolio</title>
+		<link rel="shortcut icon" href="assets/images/.png" type="image/x-icon" />
+		<!-- fontAwesome cdn -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+			integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+			crossorigin="anonymous"
+		/>
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="assets/vendors/bootstrap.min.css" />
+		<!-- Page-loader -->
+		<link rel="stylesheet" href="assets/vendors/pageLoader.css" />
+		<!-- custom stylesheet -->
+		<link rel="stylesheet" href="./styles/style.css" />
+	</head>
+	<body id="mainBase">
+		<!-------------Page loader----------->
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+		</div>
+		<!-------------Back to Top----------->
+		<a href="#home" class="d-none">
+			<span class="bottom-to-top" title="Back to Top">
+				<i class="fas fa-chevron-up"></i>
+			</span>
+		</a>
+		<!--------- color-change ------------>
+		<div id="colors">
+			<div class="icon">
+				<button onclick="colorSwitch();"><i class="fas fa-cog"></i></button>
+			</div>
+			<div class="other-colors">
+				<h4>Choose Color</h4>
+				<div class="four-color">
+					<span data-color="red" id="red"></span>
+					<span data-color="pink" id="pink"></span>
+					<span data-color="blue" id="blue"></span>
+					<span data-color="cyan" id="cyan"></span>
+				</div>
+				<div class="four-color">
+					<span data-color="purple" id="purple"></span>
+					<span data-color="green" id="green"></span>
+					<span data-color="lightGreen" id="lightGreen"></span>
+					<span data-color="yellow" id="yellow"></span>
+				</div>
+				<div title="Mode" id="toggler">
+					<input id="toggle" type="checkbox" checked />
+				</div>
+				<div id="default" class="default">Default Color</div>
+			</div>
+		</div>
+		<!---------- Nav section ------------>
+		<nav id="spy" class="main-nav">
+			<div class="aside-content">
+				<div class="profile dark-theme">
+					<div class="image">
+						<img
+							class="rounded-circle"
+							src="assets/images/msrk.jpg"
+							alt="Profile-picture"
+						/>
+					</div>
+					<div class="name"><h3>MOHD SAYEM </h3>
+						             <h3>RAZA KHAN </h3></div>
+				</div>
+				<div class="links nav-pills">
+					<a class="nav-link u-link newColor" href="#home"
+						><span><i class="fas fa-house-user"></i></span>Home</a
+					>
+					<a class="nav-link u-link" href="#aboutme"
+						><span><i class="fas fa-user"></i></span>About Me</a
+					>
+					<a class="nav-link u-link" href="#services"
+						><span><i class="fas fa-cog"></i></span>Services</a
+					>
+					<a class="nav-link u-link" href="#summary"
+						><span><i class="fas fa-id-badge"></i></span>Summary</a
+					>
+					<a class="nav-link u-link" href="#portfolio"
+						><span><i class="fas fa-briefcase"></i></span>Portfolio</a
+					>
+					<a class="nav-link u-link" href="#blog"
+						><span><i class="fas fa-blog"></i></span>My Blog</a
+					>
+					<a class="nav-link u-link" href="#contact"
+						><span><i class="fas fa-address-book"></i></span>Contact</a
+					>
+				</div>
+				<div class="social-media">
+					<a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="facebook"
+						><i class="fab fa-facebook"></i
+					></a>
+					<a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="twitter"
+						><i class="fab fa-twitter"></i
+					></a>
+					<a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="whatsapp"
+						><i class="fab fa-whatsapp"></i
+					></a>
+					<a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="github"
+						><i class="fab fa-github"></i
+					></a>
+				</div>
+			</div>
+		</nav>
+		
+		<!------------- main section ------------->
+		<main>
+			<section id="home" class="section-part">
+				<div class="container-fluid transparent-bg">
+					<div class="row">
+						<div class="col-12">
+							<div class="details">
+								<div class="wlc-note">
+									<span id="pin"><h2>Welcome</h2></span>
+									<br>
+									<br>
+								</div>
+								<div class="type">
+									<h2 class="typed_js"></h2>
+								</div>
+								<BR>
+									<BR>
+								<div class="hire-btn">
+									<a href="#contact"><button>Hire Me</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!----------- About me ---------->
+			<section id="aboutme" class="sectionL section-part">
+				<div class="container-fluid">
+					<div class="row padding">
+						<div class="col-12">
+							<div class="heading">
+								<h2>ABOUT <span class="me">ME</span></h2>
+								<p>
+									Know Me <span class="extra">More</span
+									><span class="underline"></span>
+								</p>
+							</div>
+						</div>
+						<div class="col-md-8 col-12">
+							<div class="short-des">
+								<h2>
+									I'm <span class="myName">Mohd Sayem Raza Khan </span>, a FrontendWeb
+									Developer.
+								</h2>
+								<p>
+									I'm Mohd Sayem Raza Khan & I'm from Rampur. I'm an engineering student from Teerthanker Mahaveer University, Moradabad.specialized in Computer Science. I've worked hard in my Education.
+                Along with my degree I've completed Java, SQL and Full Stack Courses online.Now I'm ready to apply my knowledge into practice.Though I do not have any real life working experience, I've  had a lot of exposure to the software field.
+                My Goal is to build a successfull career as a Frontend Web Developer.Moving forward in my career I hope to expand my experience across different industries.
+                I'm a good learner and team player
+                That's all about my self.
+                <!-- My first exposure to professional life through internship has benefited me mostly in
+                strengthening my personal skills. I have developed a positive attitude and a strong
+                sense of responsibility being innovative , resourceful, open and responsive to change. It has
+                created in me an interest in lifelong learning.
+                I'm attentive listener and effective oral communication skill -->
+								</p>
+								<p>
+								<br/>
+                My first exposure to professional life through internship has benefited me mostly in
+                strengthening my personal skills. I have developed a positive attitude and a strong
+                sense of responsibility being innovative , resourceful, open and responsive to change. It has
+                created in me an interest in lifelong learning.
+				<BR>
+					<BR>
+							</div>
+						</div>
+						<div class="col-md-4 col-12">
+							<div class="basic-info">
+								<ul>
+									<li><span>Name:</span>Mohd Sayem Raza Khan</li>
+									<li>
+										<span>Email:</span>
+										<a
+											href="sayemkhanmsrk@gmail.com"
+											target="_blank"
+											class="email"
+											>sayemkhanmsrk@gmail.com</a
+										>
+									</li>
+									<li><span>Age:</span> 21</li>
+									<li><span>From:</span> India</li>
+								</ul>
+								<a href="./assets/files/saim khan updated cv.pdf" download
+									><button>Download CV <i class="fas fa-download"></i></button
+								></a>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="count-js">
+								<div class="row count-base">
+									<div class="col-lg-3 col-md-6 col-6 py-4">
+										<p class="count_icons"><i class="fas fa-users"></i></p>
+										<h2
+											class="numscroller number"
+											data-min="-1000"
+											data-max="4"
+											data-delay="7"
+											data-increment="10"
+										>
+											4
+										</h2>
+										<h3 class="mb-0">Members</h3>
+									</div>
+									<div class="col-lg-3 col-md-6 col-6 py-4">
+										<p class="count_icons"><i class="fas fa-tasks"></i></p>
+										<h2
+											class="numscroller number"
+											data-min="-1000"
+											data-max="10"
+											data-delay="6"
+											data-increment="10"
+										>
+											10
+										</h2>
+										<h3 class="mb-0">Finished Projects</h3>
+									</div>
+									<div class="col-lg-3 col-md-6 col-6 py-4">
+										<p class="count_icons"><i class="fas fa-smile-beam"></i></p>
+										<h2
+											class="numscroller number"
+											data-min="-1000"
+											data-max="100"
+											data-delay="5"
+											data-increment="10"
+										>
+											100
+										</h2>
+										<h3 class="mb-0">Satisfied Peoples</h3>
+									</div>
+									<div class="col-lg-3 col-md-6 col-6 py-4">
+										<p class="count_icons"><i class="fas fa-building"></i></p>
+										<h2
+											class="numscroller number"
+											data-min="-1000"
+											data-max="2"
+											data-delay="9"
+											data-increment="10"
+										>
+											2
+										</h2>
+										<h3 class="mb-0">Branches</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-------------- services -------------->
+			<section id="services" class="sectionD section-part">
+				<div class="container-fluid">
+					<div class="row padding">
+						<div class="col-12">
+							<div class="heading">
+								<h2>SERVICES</h2>
+								<p>My Skills<span class="underline"></span></p>
+							</div>
+						</div>
+						<div class="col-md-6 col-12">
+							<div class="service-side-1">
+								<div class="service-div">
+									<div class="service-icon">
+										<span>
+											<i class="fab fa-js"></i>
+										</span>
+									</div>
+									<div class="service-details">
+										<h2>Programming</h2>
+										<p>
+											Lorem ipsum, dolor sit amet consectetur elit
+											adipisicing. Sequi, dicta incidunt dolorem nihil
+											reprehend dolorum possim.
+										</p>
+									</div>
+								</div>
+								<div class="service-div">
+									<div class="service-icon">
+										<span>
+											<i class="fas fa-pencil-ruler"></i>
+										</span>
+									</div>
+									<div class="service-details">
+										<h2>UX/UI Design</h2>
+										<p>
+											Lorem ipsum, dolor sit amet consectetur elit
+											adipisicing. Sequi, dicta incidunt dolorem nihil
+											reprehend dolorum possim.
+										</p>
+									</div>
+								</div>
+								<div class="service-div">
+									<div class="service-icon">
+										<span>
+											<i class="fas fa-drafting-compass"></i>
+										</span>
+									</div>
+									<div class="service-details">
+										<h2>Web Development</h2>
+										<p>
+											Lorem ipsum, dolor sit amet consectetur elit
+											adipisicing. Sequi, dicta incidunt dolorem nihil
+											reprehend dolorum possim.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-12">
+							<div class="service-side-2">
+								<div class="service-div">
+									<div class="service-icon">
+										<span>
+											<i class="fas fa-bullhorn"></i>
+										</span>
+									</div>
+									<div class="service-details">
+										<h2>SEO Marketing</h2>
+										<p>
+											Lorem ipsum, dolor sit amet consectetur elit
+											adipisicing. Sequi, dicta incidunt dolorem nihil
+											reprehend dolorum possim.
+										</p>
+									</div>
+								</div>
+								<div class="service-div">
+									<div class="service-icon">
+										<span>
+											<i class="fas fa-palette"></i>
+										</span>
+									</div>
+									<div class="service-details">
+										<h2>Graphics Designing</h2>
+										<p>
+											Lorem ipsum, dolor sit amet consectetur elit
+											adipisicing. Sequi, dicta incidunt dolorem nihil
+											reprehend dolorum possim.
+										</p>
+									</div>
+								</div>
+								<div class="service-div">
+									<div class="service-icon">
+										<span>
+											<i class="fas fa-laptop-code"></i>
+										</span>
+									</div>
+									<div class="service-details">
+										<h2>DBMS</h2>
+										<p>
+											Lorem ipsum, dolor sit amet consectetur elit
+											adipisicing. Sequi, dicta incidunt dolorem nihil
+											reprehend dolorum possim.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!----------- Resume ------------>
+			<section id="summary" class="sectionL section-part">
+				<div class="container-fluid">
+					<div class="row padding">
+						<div class="col-12">
+							<div class="heading">
+								<h2>SUMMARY</h2>
+								<p>Resume<span class="underline"></span></p>
+							</div>
+						</div>
+						<div class="col-md-6 col-12">
+							<div class="educationEx">
+								<h2>My Education</h2>
+								<div class="eduEx-section">
+									<div class="year">
+										<span>2021 - 2025</span>
+									</div>
+									<div class="subject">B.Tech in CS</div>
+									<div class="institute">Teerthanker Mahaveer University,Moradabad</div>
+									<div class="description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Nisi aliquam quae voluptatum animi debitis aut.
+									</div>
+								</div>
+								<div class="eduEx-section">
+									<div class="year">
+										<span>2020 - 2021</span>
+									</div>
+									<div class="subject">SSC</div>
+									<div class="institute">St Anthony S.S Secondary School, Rampur</div>
+									<div class="description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Nisi aliquam quae voluptatum animi debitis aut.
+									</div>
+								</div>
+						
+							<div class="eduEx-section">
+								<div class="year">
+									<span>2020 - 2021</span>
+								</div>
+								<div class="subject">HSC</div>
+								<div class="institute">Dayawati Modi Academy, Rampur</div>
+								<div class="description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Nisi aliquam quae voluptatum animi debitis aut.
+								</div>
+							</div>
+						</div>
+						</div>
+						<div class="col-md-6 col-12">
+							<div class="educationEx exparience">
+								<h2>My Experience</h2>
+								<div class="eduEx-section">
+									<div class="year">
+										<span>2020 - 2021</span>
+									</div>
+									<div class="subject">Web Designer</div>
+									<div class="institute">Core Lab It</div>
+									<div class="description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Nisi aliquam quae voluptatum animi debitis aut.
+									</div>
+								</div>
+								<div class="eduEx-section">
+									<div class="year">
+										<span>2021 - 20??</span>
+									</div>
+									<div class="subject">Jr. Web Developer</div>
+									<div class="institute">Wolfpack DigitaL</div>
+									<div class="description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Nisi aliquam quae voluptatum animi debitis aut.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!------- My skills ------>
+						<div class="col-md-6 col-12">
+							<div class="skills">
+								<h2>Skills</h2>
+								<div class="single-skill">
+									<div class="skill-name-percent">
+										<div class="skill-name">HTML</div>
+										<div class="percent">90%</div>
+									</div>
+									<div class="progress-bar">
+										<span></span>
+									</div>
+								</div>
+								<div class="single-skill">
+									<div class="skill-name-percent">
+										<div class="skill-name">CSS</div>
+										<div class="percent">85%</div>
+									</div>
+									<div class="progress-bar">
+										<span></span>
+									</div>
+								</div>
+								<div class="single-skill">
+									<div class="skill-name-percent">
+										<div class="skill-name">javaScript</div>
+										<div class="percent">80%</div>
+									</div>
+									<div class="progress-bar">
+										<span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-12">
+							<div class="skills skills-right">
+								<h2 style="color: transparent; user-select: none">Development</h2>
+								<div class="single-skill">
+									<div class="skill-name-percent">
+										<div class="skill-name">bootstrap</div>
+										<div class="percent">70%</div>
+									</div>
+									<div class="progress-bar">
+										<span></span>
+									</div>
+								</div>
+								<div class="single-skill">
+									<div class="skill-name-percent">
+										<div class="skill-name">jQuery</div>
+										<div class="percent">90%</div>
+									</div>
+									<div class="progress-bar">
+										<span></span>
+									</div>
+								</div>
+								<div class="single-skill">
+									<div class="skill-name-percent">
+										<div class="skill-name">PYTHON</div>
+										<div class="percent">70%</div>
+									</div>
+									<div class="progress-bar">
+										<span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="downloadCv-btn2">
+								<a href="./assets/files/saim khan updated cv.pdf" download
+									><button>Download CV <i class="fas fa-download"></i></button
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!------------- Portfolio --------------->
+			<section id="portfolio" class="sectionD section-part">
+				<div class="container-fluid">
+					<div class="row padding">
+						<div class="col-12">
+							<div class="heading">
+								<h2>PORTFOLIO</h2>
+								<h2 style="color: var(--sectionD-heading)">PROJECT</h2>
+								<p>My Projects<span class="underline"></span></p>
+							</div>
+						</div>
+						<div class="col-12 p-0">
+							<!----------- mix it up --------->
+							<div class="controls">
+								<button type="button" class="control" data-filter="all">All</button>
+								<button type="button" class="control" data-filter=".brand">
+									Brand
+								</button>
+								<button type="button" class="control" data-filter=".best">
+									Best
+								</button>
+								<button type="button" class="control" data-filter=".popular">
+									Popular
+								</button>
+							</div>
+							<div class="mixitup-container">
+								<div class="row">
+									<div class="col-md-4 col-6">
+										<div class="mix brand best">
+											<img
+												class="image"
+												src="assets/images/download.jpg"
+												alt="mixitup"
+											/>
+											<div class="project-details">
+												<h3>Weather App</h3>
+												<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi labore doloremque sunt delectus pariatur accusamus sapiente, beatae dolorum officia quos aperiam voluptatem, sit iste id! Similique veritatis repellat vero iure.</span>
+											</div>
+										</div>
+										<div class="mix popular">
+											<img
+												class="image"
+												src="assets/images/Project2.png"
+												alt="mixitup"
+											/>
+											<div class="project-details">
+												<h3>To Do List</h3>
+												<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ut impedit libero praesentium quas cumque modi deserunt earum porro, voluptates quaerat eos quasi eveniet dolores tempore, laudantium et rerum! Ea.</span>
+											</div>
+										</div>
+										<div class="mix best height-none">
+											<img
+												class="image"
+												src="assets/images/xx.png"
+												alt="mixitup"
+											/>
+											<div class="project-details">
+												<h3>Project name</h3>
+												<span>Details</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-6">
+										<div class="mix best popular">
+											<img
+												class="image"
+												src="assets/images/c.png"
+												alt="mixitup"
+											/>
+											<div class="project-details">
+												<h3>Calculator</h3>
+												<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio soluta maxime animi cupiditate at exercitationem adipisci laboriosam quos repudiandae ex excepturi voluptatem autem commodi totam sint hic, molestiae quaerat!</span>
+											</div>
+										</div>
+										<div class="mix brand">
+											<img
+												class="image"
+												src="assets/images/WhatsApp Image 2024-06-28 at 6.12.19 PM.jpeg"
+												alt="mixitup"
+											/>
+											<div class="project-details">
+												<h3>Project name</h3>
+												<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex magnam quasi, quis itaque, sed quidem earum delectus nobis architecto culpa debitis autem, velit amet? Sapiente in dolorem laboriosam accusantium!</span>
+											</div>
+										</div>
+										<div class="mix best height-none">
+											<img
+												class="image"
+												src="assets/images/xx.png"
+												alt="mixitup"
+											/>
+											<div class="project-details">
+												<h3>Project name</h3>
+												<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt at error, veritatis et, libero dicta iste sed facilis harum eligendi voluptatem ea consectetur, repudiandae laboriosam iusto vel nesciunt cumque neque!</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-6 displayN">
+										<div class="mix best">
+											<img
+												class="image"
+												src="assets/images/WhatsApp Image 2024-06-28 at 7.15.50 PM.jpeg"
+												alt="mixitup"
+											/>
+											<div class="project-details">
+												<h3>Project name</h3>
+												<span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus explicabo dolorum minima itaque molestias, distinctio error vero veniam, officiis sapiente accusantium porro ullam voluptas aperiam facilis. Quibusdam, id eius?</span>
+											</div>
+										</div>
+										<div class="mix popular">
+											<img
+												class="image"
+												src="assets/images/cc.png"
+												alt="mixitup"
+											/>
+											<div class="project-details">
+												<h3>Project name</h3>
+												<span>Details</span>
+											</div>
+										</div>
+										<div class="mix best">
+											<img
+												class="image"
+												src="assets/images/cc.png"
+												alt="mixitup"
+											/>
+											<div class="project-details">
+												<h3>Project name</h3>
+												<span>Details</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!---------------- Blog ---------------->
+			<section id="blog" class="sectionD section-part">
+				<div class="container-fluid">
+					<div class="row padding">
+						<div class="col-12">
+							<div class="heading">
+								<h2>BLOGS</h2>
+								<p>My Blog<span class="underline"></span></p>
+							</div>
+						</div>
+						<div class="col-md-6 col-12">
+							<div class="blog-container">
+								<div class="blog-img">
+									<img src="assets/images/blog1.jpg" alt="blog1" />
+									<div class="float-text">
+										<p>Explore Nature</p>
+										<span>Details</span>
+									</div>
+								</div>
+								<div class="blog-des">
+									<div class="blog-heading">
+										<h3>How to forget pain</h3>
+									</div>
+									<div class="timeAndDate">
+										<p>
+											June 21, 2021 by <span><a href="#">saim khan</a></span>
+										</p>
+									</div>
+									<div class="blog-txt">
+										Lorem ipsum dolor sit, amet consectetur. Delenitiuer magnam
+										fugiat, ad iure velit reiciendis unde et qui. Lorem ipsumert
+										dolor sit amet consectetur adipisicing elit.<span
+											class="dots"
+											>...</span
+										>
+										<span class="extend-txt"
+											>Lorem ipsum dolor sit amet consectetur adipisicing
+											elit. Illo quidem, accusantium dolorem nostrum delectus
+											odio? Lorem ipsum dolor sit amet consectetur adipisicing
+											elit. Lorem, ipsum.</span
+										>
+										<div class="readMore">
+											<div class="innerReadMe" onclick="readMore(0);">
+												<span class="txt-btn" data-state="close"
+													>Read more</span
+												>
+												<i class="show-text-icon fas fa-chevron-down"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-12">
+							<div class="blog-container md-margin">
+								<div class="blog-img">
+									<img src="assets/images/blog2.jpg" alt="blog1" />
+									<div class="float-text">
+										<p>Explore Nature</p>
+										<span>Details</span>
+									</div>
+								</div>
+								<div class="blog-des">
+									<div class="blog-heading">
+										<h3>How to find out peace</h3>
+									</div>
+									<div class="timeAndDate">
+										<p>
+											June 20, 2021 by <span><a href="#">saim khan</a></span>
+										</p>
+									</div>
+									<div class="blog-txt">
+										Lorem ipsum dolor sit, amet consectetur. Delenitiuer magnam
+										fugiat, ad iure velit reiciendis unde et qui. Lorem ipsumert
+										dolor sit amet consectetur adipisicing elit.<span
+											class="dots"
+											>...</span
+										>
+										<span class="extend-txt"
+											>Lorem ipsum dolor sit amet consectetur adipisicing
+											elit. Illo quidem, accusantium dolorem nostrum delectus
+											odio? Lorem ipsum dolor sit amet consectetur adipisicing
+											elit. Lorem, ipsum.</span
+										>
+										<div class="readMore">
+											<div class="innerReadMe" onclick="readMore(1);">
+												<span class="txt-btn" data-state="close"
+													>Read more</span
+												>
+												<i class="show-text-icon fas fa-chevron-down"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--------------- Contact -------------->
+			<section id="contact" class="sectionL section-part">
+				<div class="container-fluid">
+					<div class="row padding">
+						<div class="col-12">
+							<div class="heading">
+								<h2>Contact</h2>
+								<p>Get in Touch<span class="underline"></span></p>
+							</div>
+						</div>
+						<div class="col-md-4 col-12">
+							<div class="contact-container">
+								<h3>Address</h3>
+								<div class="address">
+									India
+								</div>
+								<div class="contact-info">
+									<div class="phone">
+										<span><i class="fas fa-phone"></i></span>
+										<span>+918171390528</span>
+									</div>
+									<div class="mobile">
+										<span><i class="fas fa-pager"></i></span>
+										<span>+918171****28</span>
+									</div>
+									<div class="mail">
+										<span><i class="fas fa-envelope"></i></span>
+										<span>sayemkhanmsrk@gmail.com</span>
+									</div>
+								</div>
+								<div class="follow-me">
+									<h3>Follow me</h3>
+									<div class="social-media-2">
+										<a href="javaScript:void(0)">
+											<i
+												class="fab fa-facebook"
+												data-bs-toggle="tooltip"
+												data-bs-placement="top"
+												title="facebook"
+											></i>
+										</a>
+										<a href="javaScript:void(0)">
+											<i
+												class="fab fa-whatsapp"
+												data-bs-toggle="tooltip"
+												data-bs-placement="top"
+												title="whatsapp"
+											></i>
+										</a>
+										<a href="javaScript:void(0)">
+											<i
+												class="fab fa-twitter"
+												data-bs-toggle="tooltip"
+												data-bs-placement="top"
+												title="twitter"
+											></i>
+										</a>
+										<a href="javaScript:void(0)">
+											<i
+												class="fab fa-instagram"
+												data-bs-toggle="tooltip"
+												data-bs-placement="top"
+												title="instagram"
+											></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-8 col-12">
+							<div class="messages-box">
+								<h3>Describe Your Needs</h3>
+								<form
+									class="row"
+									action="https://formspree.io/f/xknepvdb"
+									method="post"
+								>
+									<div class="col-md-6 col-12">
+										<input
+											type="text"
+											id="textBox"
+											name="Name"
+											placeholder="Name"
+											required
+										/>
+									</div>
+									<div class="col-md-6 col-12">
+										<input
+											type="email"
+											name="Email"
+											id="email"
+											placeholder="Email"
+											required
+										/>
+									</div>
+									<div class="col-12">
+										<textarea
+											name="Message"
+											id="msg"
+											rows="5"
+											placeholder="Write in details about your needs...."
+											required
+										></textarea>
+									</div>
+									<div class="col-12 adjustment">
+										<button type="submit">
+											Send Message <i class="fas fa-paper-plane ms-1"></i>
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- -------------footer------------- -->
+			<footer class="sectionD container-fluid padding">
+				<div class="row">
+					<div class="col-md-6 col-12 main-footer-text">
+						<span>
+							Copyright © 2021-22
+							</span>
+						All Rights Reserved.
+					</div>
+					<div class="col-md-6 col-12 text-end">
+						<a href="#" title="Terms & Policy">Terms & Policy </a>
+						<span>|</span>
+						<a href="#" title="Disclaimer">Disclaimer</a>
+					</div>
+				</div>
+			</footer>
+		</main>
+
+		<!-- jQuery -->
+		<script src="assets/vendors/jquery-3.6.0.js"></script>
+		<!-- bootstrap bundle -->
+		<script src="assets/vendors/bootstrap.bundle.min.js"></script>
+		<!-- Count-js -->
+		<script src="assets/vendors/numscroller-1.0.js"></script>
+		<!-- typed js -->
+		<script src="assets/vendors/typed@2.0.12.js"></script>
+		<!-- mix it up -->
+		<script src="assets/vendors/mixitup.min.js"></script>
+		<!-- color-switcher js -->
+		<script src="./scripts/mode.js"></script>
+		<script src="./scripts/palette.js"></script>
+		<script src="assets/vendors/color-switcher.js"></script>
+		<!-- custom js -->
+		<script src="./scripts/main.js"></script>
+	</body>
+</html>
